@@ -1,0 +1,20 @@
+si desesas agregar un archivo primero tienes que agregarlo 
+
+git add . --- este comando agrega todos los archivos nuevos 
+git add (nombre del archivo )
+
+despues de esto se tiene que hacer un commit 
+
+git commit -m "mensaje para el commit"
+-----------------------------------------------------------------------------
+para mandar archivos al repository de git primero se debe colocar en git bash 
+
+git remote add origin https://github.com/Dfamian/Udemy.git  ---- para agregar el url del servidor 
+git branch -M (nombre de la rama en este caso es pc1)
+git push origin -u (nombre de la rama )
+
+----------------------------------------------------------------------------------------
+
+para copiar los archivos se debe usar
+
+git clone https://github.com/Dfamian/Udemy.git 
