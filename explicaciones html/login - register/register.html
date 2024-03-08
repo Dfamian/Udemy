@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>register</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <form action="dasboard.html" method="get"></form>
+    <input type="text" class="est" name="nombre" placeholder="nombre">
+    <input type="text" class="est" name="apellido" placeholder="apellido">
+    <br>
+    <input type="text" class="est" name="usuario" placeholder="usuario">
+    <input type="password" class="est" name="contraseña" placeholder="contraseña">
+    <br>
+    <input type="email" class="est" name="email" placeholder="email" style="width: 440px;"> <br>
+    <a href="login.html">ingresar</a>
+    <br>
+    
+    <select name="nacimiento [dia]" id="nacimiento-dia">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+    </select>
+
+    <select name="mes [mes]" id="mes">
+        <option value="enero">enero</option>
+        <option value="febrero">febrero</option>
+        <option value="marzo">marzo</option>
+        <option value="abril">abril</option>
+        <option value="mayo">mayo</option>
+        <option value="junio">junio</option>
+        <option value="julio">julio</option>
+        <option value="agosto">agosto</option>
+        <option value="septiembre">septiembre</option>
+        <option value="octubre">octubre</option>
+        <option value="noviembre">noviembre</option>
+        <option value="diciembre">diciembre</option>
+    </select>
+    <select name="año[año]" id="año">
+        <option value="2000"> 2000</option>
+        <option value="2001"> 2001</option>
+        <option value="2002"> 2002</option>
+        <option value="2003"> 2003</option>
+        <option value="2004"> 2004</option>
+        <option value="2005"> 2005</option>
+    </select>
+
+    <h3 style="color: rgba(128, 128, 128, 0.536); border: 1px solid rgba(255, 0, 255, 0.407); font-size: large; margin-left: 100px; padding: 10px;
+     border-radius: 100px; width: 180px; ">fecha de nacimiento</h3><br>
+
+    <input type="date" class="est" name="fecha de nacimiento" placeholder="ingrese su fecha de nacimiento ">
+    
+
+    <h3 style="color: rgba(128, 128, 128, 0.536); border: 1px solid rgba(255, 0, 255, 0.407); font-size: large; margin-left: 200px; padding: 10px;
+    border-radius: 100px; width: 60px; "> Genero</h3>
+
+    <label for="mujer">
+        <input type="radio" name="genero" id="mujer" class="gen">mujer
+    </label>
+    <label for="hombre">
+        <input type="radio" name="genero" id="hombre" class="gen">hombre
+    </label> <br> <br>
+
+        <h3 style="color: rgba(128, 128, 128, 0.536); border: 1px solid rgba(255, 0, 255, 0.407); font-size: large; margin-left: 150px; padding: 10px;
+        border-radius: 100px; width: 190px; ">noticias a seleccionar </h3>
+    <br>
+        <label for="deporte">
+            <input type="checkbox" name="noticias" id="deporte" class="no"> deporte
+        </label>
+        <label for="Ciencia">
+            <input type="checkbox" name="noticias" id="Ciencia" class="no">Ciencia
+        </label>
+        <label for="cocina">
+            <input type="checkbox" name="noticias" id="cocina" class="no">cocina
+        </label>
+        <label for="arte">
+            <input type="checkbox" name="noticias" id="arte" class="no">Arte
+        </label>
+        <label for="tecnologia">
+            <input type="checkbox" name="noticias" id="tecnologia" class="no">tecnologia
+        </label>
+        <br>
+
+<button type="submit">
+    registrar
+</button>
+
+
+    
+</body>
+</html>

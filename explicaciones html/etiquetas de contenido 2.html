@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>etiquetas de contenido 2</title>
+</head>
+<body>
+
+    <style>
+
+        ellipse {
+            fill: url(#degradado);
+            stroke: rgb(8, 5, 2);
+            stroke-width: 1px;
+        }
+
+    </style>
+
+
+
+    <div id="svg">
+
+        <svg style="border: 2px solid black;" height="600px" width="500px" >
+
+         <rect x="100px" y="30px" width="50px" height="50px" fill="transparent" stroke="blue" stroke-width="5"/>
+
+          <circle cx="50px" cy="50px" r="50" fill="green"/>
+
+          <ellipse cx="150" cy="150" rx="90" ry="100"/>
+
+          <defs>
+            <lineargradient id="degradado" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" style="stop-color: rgba(20, 0, 234, 0.966) ;"/>
+                <stop offset="100%" style="stop-color: rgb(7, 84, 59);"/>
+                <stop offset="80%" style="stop-color: rgba(247, 54, 54, 0.599);"/>
+            </lineargradient>
+        </defs>
+
+        <text fill="white" font-size="20" font-family="arial" x="120" y="120">degradado</text>
+           
+        
+        </svg>
+      </div>
+
+    
+</body>
+</html>

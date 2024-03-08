@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas</title>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+        table {
+            border-collapse: collapse;
+        }
+        thead {
+            background-color: indigo;
+            color: white;
+            padding: 10px 10px;
+        }
+        .table th, .table td {
+            padding: 5px 10px;
+            border: 1px solid rgb(27, 27, 27);
+        }
+        table td {
+            padding: 10px;
+            text-align: center;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+        <table>
+            <thead>
+                <rt>
+                    <th>#</th>
+                    <th>nombre</th>
+                    <th>apellido</th>
+                    <th>ciudad</th>
+                </rt>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Gilbert</td>
+                    <td>Rodriguez</td>
+                    <td>Santa marta</td>
+                </tr>
+               <tr>
+                <td>2</td>
+                <td>lina</td>
+                <td>diaz</td>
+                <td>Santa marta</td>
+               </tr>
+            </tbody>
+        </table>
+<br>
+<br>
+<table>
+    <tbody>
+        <tr>
+            <td>item 1</td>
+            <td>item 2</td>
+            <td> item 3</td>
+            <td>item 4</td>
+        </tr>
+        <tr>
+            <td rowspan="2">item 4</td>
+            <td>item 5</td>
+            <td colspan="2">item 6</td>
+        </tr>
+        <tr>
+            <td>item 7</td>
+            <td rowspan="2">item 8</td>
+            <td>item 9</td>
+        </tr>
+        <tr>
+            <td>item 10 </td>
+            <td>item 11</td>
+            <td>item 12</td>
+        </tr>
+    </tbody>
+</table>
+
+<br>
+<br>
+
+<table>
+    <tbody>
+        <tr>
+            <td>item 1 </td>
+            <td rowspan="2">item 2</td>
+            <td>item 3</td>
+        </tr>
+        <tr>
+            <td>item 4</td>
+            <td>item 5</td>
+        </tr>
+    </tbody>
+</table>
+
+<br>
+<br>    
+
+<table>
+    <tbody>
+        <tr>
+            <td colspan="1">celda</td>
+            <td colspan="4">celda</td>
+            <td colspan="1">celda</td>
+        </tr>
+        <tr>
+                <td rowspan="3">celda</td>
+                <td>celda</td>
+                <td>celda</td>
+                <td>celda</td>
+                <td>celda</td>
+                <td rowspan="3">celda</td>
+            </td>
+        </tr>
+        <tr>
+            <td>celda</td>
+            <td colspan="2">celda</td>
+            <td>celda</td>
+        </tr>
+        <tr>
+            <td>celda</td>
+            <td>celda</td>
+            <td>celda</td>
+            <td>celda</td>
+        </tr>
+    </tbody>
+</table>
+
+<table>
+    <tbody>
+        <tr>
+            <td rowspan="3">celda</td>
+                <td>celda</td>
+                <td rowspan="2">celda</td>
+                <td>celda</td>
+                <td rowspan="3">celda</td>
+                <td rowspan="3">celda</td>
+        </tr>
+        <tr>
+            <td>celda</td>
+            <td>celda</td>
+        </tr>
+        <tr>
+            <td>celda</td>
+            <td>celda</td>
+            <td>celda</td>
+        </tr>
+    </tbody>
+</table>
+
+
+</body>
+</html>
+
+

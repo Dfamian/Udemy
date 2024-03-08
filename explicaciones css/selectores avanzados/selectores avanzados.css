@@ -1,0 +1,62 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+p span:first-child{
+    color: aliceblue;
+    background-color: black;
+}
+
+p span:last-child{
+    color: aliceblue;
+    background-color: blue;
+}
+p span:only-child{
+    background-color: bisque;
+}
+
+/*
+a:lang(en){
+    color: aquamarine;
+    text-decoration: none;
+}
+*/
+
+a{
+    display: block;
+    padding: 5px;
+}
+a:link{
+    color:brown;
+}
+a:visited{
+    color: rgb(244, 0, 235);
+}
+
+a:active{
+    font-size: 23px;
+    color: black;
+    width: 300px;
+    height: 300px;
+    background-image: url(https://th.bing.com/th/id/R.775dea29a002a202cb1c2a4d336a2462?rik=q4FVsXWdWssNSQ&pid=ImgRaw&r=0);
+}   
+
+.boton{
+    color: brown;
+    width: 400px;
+    height: 200px;
+    border-radius: 40%;
+    cursor: pointer;
+    font-size: x-large;
+}
+.boton:hover{
+    background-color: black;
+    color: aliceblue;
+}
+
+input:focus{
+    font-size: larger;
+    background-color: black;
+    color: red;
+}

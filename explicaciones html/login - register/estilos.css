@@ -1,0 +1,41 @@
+body  {
+    font-family: sans-serif;
+}
+
+.est{
+    width: 200px;
+    padding: 15px;
+    margin-bottom: 5px;
+    border: 1px solid rgb(211, 211, 211);
+    margin-right: 5px;
+}
+button{
+    width: 200px;
+    padding: 10px 5px;
+    background-color: rgba(255, 127, 206, 0.436);
+    border: solid 0px rgba(255, 0, 0, 0.16);
+    color: gray;
+    border-radius: 200px;
+    cursor: pointer;
+    margin-left: 150px;
+}
+
+select{
+    width: 100px;
+    padding: 5px;
+    background-color: rgba(250, 35, 214, 0.148);
+    border: 4px;
+    border-radius: 100px;
+    cursor: pointer ;
+    margin-left: 30px;
+}
+.gen{
+    color: rgba(128, 128, 128, 0.155);
+    margin-left: 120PX;
+    font-size: large;
+}
+
+.no{
+    margin-left: 20px;
+    
+}

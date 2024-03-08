@@ -1,0 +1,38 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+caption{
+    font-size: 30px;
+}
+
+table{
+    border-collapse: collapse;
+}
+
+thead th{
+    border-bottom: 3px solid #8d1f6f;
+}
+
+th , td {
+    padding: 10px 15px;
+    border-right: 1px solid #8d1f6f;
+    border-bottom: 1px solid #8d1f6f;
+}
+
+th:last-child, td:last-child{
+    border-right: none;
+}
+tbody tr:last-child td{
+    border-bottom: none;
+
+}
+tbody tr:nth-child(2n+1){
+        background-color: red;
+}
+colgroup col:nth-child(2n){
+    background-color: brown;
+    
+}

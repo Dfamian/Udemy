@@ -1,0 +1,186 @@
+                                   CINCEPOS BASICOS 
+SELECTOR  unobjeto selelctor es aquel objeto que es seleccionado en css por ejemplo h3 , h2 , spam , etc 
+DECLARACION tiene que tener una llave de apertura { color: ;} y una llave de cierre , dentro de ellas viene la propiedad que sirve 
+sirve para indivar a css que estilo tiene 
+ 
+ecisten 3 tipos para colorar estilos 
+-em linea que es cuando , se agrega el mismo style en la linea programada
+- estilos internos que el puesto en una etiqueta style dentro del <head> 
+- estilo externo , para usar un estilo externo se debe usar la etiqueta link que es el que hace la conexion con la hoja de estilos 
+que se esta trabajandp 
+
+NOTAAAA para determonar si es una pseudo clase o un pseudo elemento se define por los (:)
+si es un pseudo elemento se define con (::)
+Si es una pseudo clase se define con (:)
+
+cuando se coloca un estilo a un objeto en css con un sector , y despues se coloca un mismo sector con el mismo objeto mas abajo 
+este se sobreescribira por el ultimo que hayamos colocado esto se llama objeto en cascada 
+--------------------------------------------------------------------------------------------------------------------------
+                                SELECTORES BASICOS 
+(SELECTOR UNIVERSAL) , el sector universal viene representado con un [ * ], y este selector universal se encarga de colocar los  
+estilos que haya dentro de este en , todas las etiquetas de style , en en toda la pagina 
+
+{se tiene que tener en cuenta que , si se coloca un estilo en el selector universaly despues
+se coloca , otro estilo en una etiqueta , esta va a sobrescribir el selector universal}
+
+(SELECTORRES DECENDIENTES) se hace esto cuando se quiere llegar al elemento empezando por el 
+    elemento padre quse seria div , depues elemento hijo-padre que seria
+    la etiqueta (p) y por ultimo la etiqueta span que seria el hijo 
+
+    dicho esto solo cambiaria los estilos de la etiqueta spam ubicada en 
+    esta seleccion de elementos
+
+(-ID-) los selectores id funcionan como un identificador de la etiqueta y esots selectores son unicos, no 
+puede haber 2 ids con el mismo nombre  , los ids son seleccionados en css con un [#]
+-se puede usar para los primeros div o selecciones que dividen los elementos  , tamaños , colores de fondo etc .
+
+(-CLASS-) los selectores class sirven para agregar una clase a la etiqueta dada , se puede agregar mas de una clase 
+a cualquier elemento , las class son seleccionadas en css  con un [.]<etiqueta>
+-se puede usar para agregar estilos a muchos elementos segidamente
+
+COMO COMBINAR SELECTORES 
+
+- selector de hijos -  {p > span} esto sirve para  seleccionar una etiqueta que este dentro de otra etiqueta
+-selector de hermanos - { p + span} esto sirce para seleccionar dos o mas etiquetas que esten juntas 
+a un guro de ellas 
+- selector general- { p ~ span} es para seleccionar varias etiquetas pero esta etiqueta , toma de la primera 
+etiqueta seleccionada hacia abajo  
+----------_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+                                    SELECTOR DE ATRIBUTOS 
+
+en css para seleccionar un atributo especifico se debe colocar el atributo en [] y asi se selecciona 
+automaticamente .
+Tambien se puede seleccionar el atributo con su valor por ejemplo [title="etiqueta1v1"] y agregarle un estilo
+
+-SEPARADOS POR UN ESPACIO  [data-parrafo~="parrafo"] cuando se coloca un [~] antes del igual va a tomar todos 
+los atributos con valores que tengan un espacio entre ellos 
+-[data-parrafo|="parrafo"] si ponemos este simbolo funcionaria pero el espacio se ve remplazado por una [-] raya
+-[data-parrafo^="uno"] si colocamos un [^] antes del igual , esta tomara la palabra clave que se encuentre en el 
+valor o las comillas
+-[[data-parrafo$="uno"]] si colocamos un [$] antes del igual, este tomara las ultimas letras que coloquemos en el 
+valor o las omillas
+-[data-parrafo*="uno"] si colocamos un [*] este tomara todos los valores con el valor colocado en las comillas, ya sea 
+en orden que se encuentre o en desorden 
+
+_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+                                        SELECTORES AVANZADOS 
+
+para seleccionar una pseudo clase primero se debe , primero se debe a;adir el elemento seleccionado y separados por un [:] vienen
+las pseudoclases, por ejemplo 
+                                   elemento:pseudo-class{
+                                   }
+tambien se puede agregar un elemento con su clase por ejemplo
+                                   elemento:clase:pseudo-class{
+                                   }
+
+estos selectores sirven para hacer una seleccion especifica, ya sea de hijos , primeros hijos , ultimos hijos, hijos en si etc 
+
+se puede agregar pseudoclases dependiendo a su idioma , esto se muestra en el meta del head 
+lang es en etc , si el idioma de la pagina esta en español se aplicaran los cambios de modo que si esta en otro idioma estos no 
+se aplicaran  ejemplo 
+                        a:lang(es){
+                        }
+
+elemento:link{
+    esto se le coloca a una etiqueta que lleve un enlace dentro , esto es para modificar el texto del enlace en si 
+}
+elemento:visited{
+    esto es para cambiar el estilo de texto cuando el enlace ya ha sido visitado 
+}
+
+elemento:activate{
+    este elemento agrega una el estilo puesto en este cuando es clickeado o activado 
+}
+
+CCS2
+
+elemento:hover{
+    este elemento tiene el efecto que cuando se pasa el puntero por el elementeo aplicado 
+    este aplicara el estilo que se le halla colocado 
+}
+
+elemento:focus{
+    este elemento sirve cuando uno tiene seleccionado el elemento se usa mucho en los inputs
+    y en los text area , lo cambia por el elemento que se halla colocado 
+}
+
+-------------------------------------------------------------------------------------------------------
+                                    NTH CHILD
+la propiedad nth child sirve para seleccionar el hijo depende el numero en el que se encuentre , si es 
+el primer hijo se ve representado con un (1), si es el segund (2) y asi sucesivamente .
+
+- esto tambien funciona con condicionales es decir , si colocamos (2n) , va a tomar todos los numeros pares 
+pero si colocamos (3n) va a tomar todos los impares de 3 en 3 
+
+-para seleccionar la el inicio de las colimnas se coloca un + y la columna de inicio , por ejemplo
+(2n+3) aqui estamos indicando que vamos a empezar de el hijo (3) y vamos agregando de 2 en 2 (2n)
+
+-para seleccionar los numeros impares facilmente solo se puede agregar (odd)
+
+-para seleccionar los pares facilmente se puede agregar (even)
+
+- si se coloca el comando (-n + 2) tomara desde el primer hijo hasta el numero
+deseado que queremos que tome en este caso seria el 2 
+
+---elemento:nth-lastchild= este comando funciona igual que el nth-child pero empueza desde el ultimo hijo , o 
+desde abajo hacia arriba ---
+
+                                NTH OF TYPE
+tambien existe el seleccionador con las mismas codiciones dichas anteriormente pero estas se aplican no por los 
+hijos sino por los tipos 
+
+--------------------------------------------------------------------------------------------------------------
+        NTH of TYPE  - >>   FIRST OF TYPE    << - LAST OF TYOE - ONLY OF TYPE 
+esta pseudoclase selecciona el tipo de clase o elemento , y siempre escoje el primero de estos  por ejemplo
+--article div:first-of-type{ con este comando estamos seleccionando el primer div de todos 
+los divs que hallan } 
+--article div:last-of type{ con este comando estamos seleccionando el ultimo elemento de todos los divs que 
+se hallan }
+--article div:only-of-type{este pseudoclase se encargara de escojer dentro de la etiqueta padre el unico hijo 
+que tenga solo una etiqueta }
+--   """"""     only-child {hace lo mismo que el tipo pero solo selecciona el unico hijo}
+
+--article div:nth-of-type(){selecciona un elemento especifico , este este caso seria del div}
+
+--------------------------------------------------------------------------------------------------------------------------------------
+                                PSEUDO CLASES ADICIONALES
+-root- esta pseudoclase sirve por encima de html , es como todo lo que abarca pero esta , este pseudo clase va puesta sola en css y
+tiene mas relevancia que las etiquetas universales y la etiqueta html 
+-empty- esta etiqueta toma las etiquetas que no tengan nada , que esten vacias 
+-not(etiqueta)- aplica un cambio en css mesnos a la etiqueta que se encuentre en el not, esta pseudo clase tambien se puede usar con
+una etiqueta atras de seleccion 
+-target- al usar la sublcase target , todo los estilos que se encuentren dentro de este se van a aplicar cuando estos sean seleccionados
+esto lo podemos lograr con la etiqueta <a href="#id de la etiqueta "> y asi podemos utilizarlo , es como una seleccion 
+-_-_-_-_-_-_-_-_-_-_-_-_-_-_--_-_-_-_-_-_-_-_-_-_-_-_-_-_--_-_-_-_-_-_-_-_-_-_-_-_-_-_--_-_-_-_-_-_-_-_-_-_-_-_-_-_--_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+                                   PSEUDO SELECTORRES
+los pseudos selectores que mostraremos a continucion serean utilizadas en los formularios <form> y con los inputs <input>
+
+--:enable-- la pseudo selector enable hace que podamos activar una etiqueta y cuando esta este activa se le puede aplicar un estilo diferente 
+--:disable-- ese selector se utiliza para colocarle un estilo a todas las etiquetas que esten desactivadas 
+--:cheked-- pseudo selector cheked se encarga de aplicar el estilo de este , siempre y cuando el imput este seleccionado 
+
+_-_-_-_-_-_-_-_-_-_-_-_-_-_--_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_--_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_--_-_
+                                PSEUDO PSEUDO ELEMENTO FIRS LETTER 
+--P:first-line; -- esta pseudo clase añade un estilo a la primera linea seleccionada 
+--p:first-letter; -- esta pseudo clase agrega el estilo aplicado a la primera letra de el parrafo o etiqueta seleccionada 
+
+
+_-_-_-_-_-_-_-_-_-_-_-_-_-_--_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_--_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_--_-
+
+                                   PSEUDO BEFORE - AFTER -- WEBKIT-SCROLLBAR
+-- :before --  (::) el before es un pseudo elemento ,  que sirve para agregar contenido despues de lo que haya en la etiqueta , ya 
+puede ser un estilo una etiqueta etc , esto se usa mucho en diseños.
+.. after --  (::) el pseudo elemento after funciona igual que el before pero en vez de agregar el elemento despues este lo agrega 
+antes 
+-- selection .. (::) el pseudo elemento selection sirve especificamente en la seleccion de las cosas es decir 
+"cuando se mantiene el click derecho en un texto  para seleccionarlo " 
+
+-- webkit-scrollbar -- (::) este pseudo elemento se encarga de modificar la barra con la que uno sube o baja , de algunos navegadores 
+compatibles como chrome , fire fox , opera .
+        para momdificar este pseudo elemento es necesario , volver a crear otra linea de codigo para poder aplicar todos los estilos 
+        es decir 
+        ::-webkit-scrollbar{sirve para modificar el tamaño de el scrillbar y se puede cambiar de color el fondo }
+        ::-webkit-scrollbar-thumb{ este pseudo coldico sirve para modificar el indicador de pocicion de la pagina }
+        ::-webkit-scrollbar-track{este pseudo codigo se encarga de modificar toda la barra en si del scrillbar}
+        ::-webkit-scrillbar-button-horizontal-decrement:{este pseudo codigo agrega un estilo a el boton hotizontal decreciento. se puede agregar tanto 
+        horizontalcomo vertical  }

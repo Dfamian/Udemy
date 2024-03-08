@@ -1,0 +1,51 @@
+
+:root{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(252, 3, 3);
+    padding: 0px;
+    margin: 0px;
+    background-color: black;
+
+}
+
+div{
+    max-width: 300px;
+    max-width: 400px;
+    background-color: azure;
+    margin-left: 50%;
+    color: brown;
+}
+:empty{
+    background-color: bisque;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    color: aliceblue;
+    border: 1px solid white;
+}
+:not(li){
+    background-color: azure;
+    border: 1px solid;
+}
+section:not(#cualquiernombre){
+    width: 70%;
+    margin: 0px auto;
+
+}
+ol:hover{
+    color: black;
+    background-color: brown;
+    
+}
+
+a {
+    text-decoration: none;
+
+}
+:target{
+    background-color: firebrick;
+    color: black;
+}
+p{
+    background-color: transparent;
+}

@@ -1,0 +1,36 @@
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+[title]{
+    font-size: 49px;
+    padding: 5px;
+    margin: 15px;
+    background-color: aquamarine;
+}
+[title="etiqueta1"]{
+        font-size: small;
+        background-color: blue;
+        color: wheat;
+}
+[title="etiqueta2"]{
+    font-size: large ;
+    background-color: brown;
+}
+
+[data-parrafo~="parrafo"]{
+    background-color: black;
+    color: aliceblue;
+}
+[title^="ola"]{
+    background-color: black;
+    font-size: large;
+    color: blueviolet;
+}
+h3[title$="o4"]{
+    background: color gray;
+}
+[title*="mundo4"]{
+    background-color: beige;
+}

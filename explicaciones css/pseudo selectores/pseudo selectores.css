@@ -1,0 +1,19 @@
+*{
+    margin: 4px;
+    border: 0px;
+}
+.form-control:enabled{
+    background-color: chocolate;
+    color:  white !important;
+}
+input:disabled{
+    background-color: black !important;
+    color: white;
+}
+
+.cheked:checked{
+    margin: 5px auto;
+    border: 1px solid red;
+    width: 40px;
+    height: 80px;
+}

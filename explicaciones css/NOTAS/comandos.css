@@ -1,0 +1,38 @@
+.noexiste{
+    text-decoration: none; (esta etiqueta sirve para decorar codigo 
+    colocarle linea o quitarsela etc);
+    font-weight:  esto es el peso de fuente osea la textura que
+    tiene la fuente ya puede ser que la fuente venga en negrita o etc;
+    text-shadow: este elemento agrega sombra a las letras tiene que 
+    ir con los valores de pixeles o cualquier otra medida y el color ;
+    overflow: este conamdo sirve para encerrar el contendido en una caja
+    la cual se le puede hacer scroll y configurar su ancho y alto ;
+}
+div + a {
+    esto se hace cuando la etiqueta es hermano osea , cuando la etiqueta 
+    este en la misma pocicion que la sigiente etiqueta , ninguna contenga 
+    a la otra 
+}
+div > p > span{
+    se hace esto cuando se quiere llegar al elemento empezando por el 
+    elemento padre quse seria div , depues elemento hijo-padre que seria
+    la etiqueta (p) y por ultimo la etiqueta span que seria el hijo r54tttttttttttttttttttttt
+
+    dicho esto solo cambiaria los estilos de la etiqueta spam ubicada en 
+    esta seleccion de elementos
+} 
+
+aricle p {
+    cuando se separa un elemento de otro con espacio se hace un decenso por 
+    este , es decir toma el segundo elemento que este en el primer elemento 
+}
+
+elemento:nith-child(2n)(2n+1){
+   - etiqueta nit-child sirve para seleccionar hijos especificos , ya sea 
+    de 2 en 2 o 
+    - al colocarle un +  a la etiqueta  se le esta indicando que inicie desde 
+    el numero puesto 
+    - (odd) este comando hace que tome todos los numeros impares
+    - (even) este comando hace que tome todos los numeros pares 
+}
+

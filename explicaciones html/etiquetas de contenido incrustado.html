@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>etiquetas de contenido INCRUSTADO</title>
+</head>
+<body>
+    <div>
+        <iframe src="" frameborder="3" width="30%" height="300px"></iframe>
+    </div>
+
+      <div id="SONIDO">
+        <audio controls aulay loop preload="none">
+
+            <source src="../archivos varios/cballos.mp3" type="audio/mp3" >
+            <source src="../archivos varios/caballos.mp3" type="audio/ogg">
+            <source src="../archivos varios/caballos.mp3" type="audio/wav">
+
+            el navegador no puede correr la etiqueta <code>audio</code>
+
+        </audio>
+      </div>
+
+      <div id="video">
+
+        <video controls preload="auto" loop >
+            <source src="../archivos varios/caballos_galopando.mp4" type="video/mp4">
+            <source src="../archivos varios/caballos_galopando.mp4" type="video/">
+            <source src="../archivos varios/caballos_galopando.mp4" type="video/">
+                <track src="../archivos varios/archivos vtt/subtitulos.vtt" kind="subtitles" label="español"></track>
+                <track src="../archivos varios/archivos vtt/eng.vtt" kind="subtitles" label="ingles" >
+        </video>
+      </div>
+
+      <div id="explicacion c">
+        <canvas id="tablero" height="900px" width="500" style="border: 1px solid red;">
+            <script>
+             var c   = document.getElementById("tablero");
+             var ct  = c.getContext("2d"); 
+             ct.fillStyle = "blue"; 
+             ct.fillRect(200,30,100,100)
+             ct.fillStyle = ("red");
+             ct.fillRect(100,130,100,100)
+             ct.strokeRect("100,100 ,120,120");
+
+      
+            </script>
+        </canvas>
+      </div>
+</body>
+</html>

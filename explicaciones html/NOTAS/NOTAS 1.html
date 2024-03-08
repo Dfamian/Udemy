@@ -1,0 +1,370 @@
+NOTAS :3 AP
+                            COMO VEO EL HEADO Y EL BODY Y LA JERARQUIA 
+se puede decir que una pagina web es como un cuerpo humano , mientras que el html es un esqueleto donde vamos a trabajar , la etiqueta 
+<head> es como la cabeza que retiene toda la informacion como , el lenguage <html>lang"es"</html> , el orden de los caracteres 
+<meta charset="UTF-8"> es como si fuera el cerebro de la pagina.
+
+Tambien esta el body que funciona como el cuerpo de el ser humano donde se muestra la informacion , en este apartado podrenos ver como
+se estructura la pagina en cuestion de , los titulos <h1>titulo o encabezado</h1>, tambien los parrafos <p>parrafos</p>, inamgenes 
+<img src="" alt=""> , como dato algunas etiquetas no necesitan apertura y cierre porque solo se usan para mostrar obhjetos puntuales
+como imagenes . 
+
+Tamvbien se tiene que tener en cuenta como funciona la jerarquia de la cosas y que cosa contiene las etiquetas 
+<!DOCTYPE html>  por lo general el doctype es el que va de primero porque es el que nos muestra que tipo de documento vamos a trabajar
+<html>         despues va la etiqueta del documento en el que estamos trabajando
+    <head>         la cabeza del documento
+        <body>      y el cuerpo
+        </body>
+    </head>
+</html>
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+                                ETIQUETA RAIZ Y LOS METADATOS DEL DOCUMENTO 
+
+-Toda pagina web tiene que tener un index.html porque este es el que redirige las cosas 
+
+-para dare el idioma a la pagina se hace despues del doctype dandole un atributo a html y cada lenguage maneja un codigo
+ejemplo <html lang="es"></html> , los codigos de cada pais los puedes encontrar en internet o en el autocompletqado emmet
+
+- tambien se tiene la funcion title en el <head>   <title>  encabezado </title></head> el title dentro de heado funciona como 
+encabezado y muestra un texto que va a tener en la barra de tareas
+
+- despues de crear esto va e4 apartado de link <link rel="stylesheet" href="">este se usa bastante para enlazar el documento 
+actual con recursos externos , el comando rel es el enlace directo de la pagina , y la define como una hoja de estilo, y iref 
+es la ruta donde se encuentra el enlace, para no saturar el codigo de <style></style> se usa link para hacer otro apartado y conectarlo
+
+-en los metadatos o <meta> funciona directamente con atributos , y sirve para que la pagina sea encontrada en los metadatos , por la 
+descripcion o por palabra clave <meta name="descripcion" content="venta de piezas de pc , y cotizaciones y armado de pc "> o tambien 
+o palabras clave que seria <meta name="keywords" content="pc , computer , armado , computadora , cotizacion de pc , medellin , etc">
+tambien se puede colocar el copyright <meta name="copyright" content="empresa de computadores"> y se usa principalmente para 
+colocar el renderizado de caracteres que se usa en español e ingles que es el UTF-8 <meta charset="UTF-8">  
+
+''''''''''''''''''''''''''''''''''' ETIQUETAS SCRIPING '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+la etiqueta <script> </script> peromite la insercion de codigo script como puede ser java script , esto se puede hacer en medio de las
+etiquetas, o por un documento externo .
+podemos cambiar de script colocandole un atributo de tipo ejemplo<script type="java"></script>y asi poder seleccionar el lenguage
+que necesitemos .
+para llamar a un documento externo tenemos que aplicar la etiqueta source o src , y la ruta del archivo donde se encuentra ,
+como por ejemplo <script src="codigo.js"></script>
+se recomienda colocar el contenido de java script a lo ultimo de la pagina en la ultima etiqueta del body .
+cuando el navegador no soporte el script y quieres poner un anuncio en html se coloca la etiqueta <noscript>
+
+-------------------------------------------------------------------------------------------------------------------------------
+                                        SECCIONES 
+<body> con la etiqueta body se define un cuerpo de la pagina html el  cual es la parte central de una pagina web , es donde la
+pagina interpreta todo as estructuras y sobretodo lo visual . 
+<section> la etiqueta seccion agrupa , articulos o la etiqueta article 
+secciona en cuadritos el documento html
+ <nav> contiene enlaces a la diferentes secciones de la web, como las barras de tareas o barra sde accesibilidad 
+<article> contiene eiquetas de apertura y etiquetas de salida lo cial en si contenido puede ir titulos parrafos
+imagenes etc 
+<aside>esta etiqueta se suele agregar para mostrar todo tipo de contenido externo a la pagina web 
+<h1> al <h6> estos son denominados como elementos de encabezado, varian su tamaño dependoendo el nivel que utilicemos, como por ejemplo 
+la h1 seria la que tiene una letra mas grande , y el h6 seria el que tiene el encabezado mas pequeño .
+<header>el header tiene como objetivo marcar una seccion de la paagina como un encabezado , en este quedaria para colocar imagenes
+o widgets interactivos tambien se puede usar como introduccion de una seccion a leer 
+<footer> el footer es como el pie de pagina , funciona en una seccion abajo del todo , ahi se puede colocar el copyright 
+tambien informacion de contacto etc 
+<main> encierra la informacion en una caja 
+''''''''''''''''''''''''''''''''''''''''''''''''EDICIONES''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+las ediciones peromitehacer publicos los datos que se hacen en el documento , esto es bueno para que los lectores sepan los cambios 
+que se han echo , existen 2 elementos <ins> y <del> 
+estos elementos crean una caja , esto se puede acoplar con el atriabuto daytime 
+
+-----------------------------------------------AGRUPACION DE CONTENIDO -----------------------------------------------------------
+en este apartado entran las etiquetas que sircen para estructurar las paginas en este apartado podemos ver a las siguientes etiquetas
+<p> que es para definir un parrafo .
+para la estructura tambien se tiene que tener en cuenta los espacios , si se esta escribiendo dentro de un parrafo y se quiere dar
+un salto a otra linea se tiene que escribir el comando <br> como se muestra en <link href="/explicaciones/parrafos.html">
+
+<hr> esta etiqueta nos sirve para separar un texto de otro , co una linea que va de extremo a extremo , tambien se le puede aplicar
+estilos a esta linea .
+
+<pre>en la etiqueta pre si funciona como parrafo pero la diferencia es que en este texto , las dobles espacios y los saltos de linea si 
+    cuentan , se tiene que tener en cuenta que si el texto es muy largo se va adesvbbordar por la pantalla , esto se puede acomodar con 
+    una etiqueta             style="white-space: pre-line ;
+<blockquote>  el blockquote funciona para crear una cita textual pero que se identifique de los otros textos , el blockquote crea unos 
+    espacios hacia la derecha y hacia la izquierda del texto 
+<ol> la etiqueta ol genera listas ordenadas , ya sea con numeros o letras 
+    va de la mano con la etiqueta li , estas etiquetas funcionan para hacer listas , como ol el contenedor de las listas 
+    y li es el listodo  a esto se le denomina como etiqueta de listas ordenadas
+<ul>el ul funciona igual que el ol pero en vez de dar las listas enumeradas las da con una bi;eta o puntos estas listas tienen
+    diferentes estilos , con el comando list style 
+<figure> esta etiqueta permite colocar una imaghen un link cualquier figura con una descripcion y para poder ponerle la descripcion
+    es necesario colocar el <figurecaption> y dentro de la etiqueta figure caption va la descripcion de la figura .
+
+<div> este se hace para hacer una seccion de la pgina , se usa para realizaar secciones de este bloque especifico , osea para dividir 
+    y ordenar 
+----------------------------------------------------------------------------------------------------------------------------------------
+                                      SEMANTICA A NIVEL DE TEXTO 
+<a> esta etiqueta que en espa;ol seria ancla o anchor sirve para crear un enlace a otras paginas de internet , archivos o ubicaciones 
+como tambien correos electronicos. , esta etiqueta va con el atributo tarjet , si se usa tarjet , esta etiqueta recargara el enlace 
+en la misma pagina pero si se deja sin la etiqueta redireccionara la pagina a otra ventana. 
+este tarjet tambien va acompa;ado de una serie de comandos para especificar donde abrir la ventana
+
+para hacer que esta etiqueta envie a telefono o a un correo especifico dentro de las comillas se coloca tel: o mailto:
+ejemplo <a href="mailto:gasdafsdfd@gmail.com"> correo</a> 
+
+<iframe > esta etiqueta nos permite agrgar contenido dentro de la pagina web, como una web dentro de otra web .
+    esto se lo puede aconmpa;ar con atributos tarjet (cualquier nombre en tarjet) , este tarjet hace que si la pagina se abre en una 
+    pesta;a y se abre un enlace con el mismo atributo y mismo nombre de tarjet este se va a remplazar el anterior pagina o pesta;a o ventana
+
+para la etiqueta <a> tambien se puede enviar directamente un correo con el llamado href="mailto:etc@gmail.com" o con telefonos colocando la 
+    funcion tel:=57234526 , y tambien puede hacer que esta descargue archivos , con el comando download como atributo solo.
+    tambien esta el atributo rel que funciona como una refenrencia a lo que se trata el archivo , esto sirve para una pagina para 
+    ciego .
+    
+----------------------------------------------------------------------------------------------------------------------------------------
+                                        semantica a nivel de texto parte 2
+
+<i> con esta etiqeta cambia el modo de texto a modo italico 
+<b> el texto que este en el interior de este se pone en negrita
+<u> coloca el texto en subrayado 
+<em> se cambia la fuente o el estilo a italica pero se muestra en el navegador como importante 
+<strong> vueklve el texto que esta en negrita , agrega enfasis en esta palabra o parrafo
+<small>  esto vuelve un texto peque;o 
+<big> muestra un texto grande 
+<code> esto es para mostrar codigo en la pagina 
+<suo> esto coloca un caracter como potencia o arriba de lo colocando
+<sub> esto es para colocar algo abajo del texto colocado como un logaritmo 
+<cite> cambia la fuente a italica pero sirve para citar 
+<br> agrega un salto de linea 
+<wbr> quiere decir word breack , crea un salto de linea en una palabra especifica , esto depende del contexto del explorador 
+<span> no afecta a la escritura pero esta etiqueta sirve para hacer referencia a cualquier texto 
+----------------------------------.--------------------------------------------------------------------------------------------------------
+                                    ETIQUETAS DE CONTENIDO INCRUSTADO 
+<img> la etiqueta imagen peromite insertar una imagen desde una carpeta o una url, para esto se usa src o las rutas para llegar 
+a la carpeta 
+<iframe> iframe sirce para icorporar una pagina dentro de la pagina basicamente , se le puede agregar un borde con el atributo 
+  atributo  <frameborder> funciona con src y dentro colocar el enlace o el archivo interno 
+<enbed> enbed es una herramienta que integra una aplicacion, externa o de contenido interactivo como los archivos flash  
+<object> con la etiqueta objet , podemos agregar archhivos de video , audio aplles de java ,active x , pdf tambien se puede usar
+    para insertar otra pagina web pero semanticamente esta mal echo . 
+    dentro de esta etiqueta va la etiqueta <param> que es para colocar parametros a los archivos 
+ETIQUETAS DE SONIDO Y VIDEO 
+    <AUDIO> se usa para gregar contenido de audio mato pero en html , el formato de audio que permite html es mp3 , ogg , wav
+a esta se le puede agregar dentro de la etiqueta audio una etiqueta <source> y en sus atributos nos permite colocar la ruta 
+anulando la ruta de arriba y tambien permite cambiar el tipo de formato , con el atributo type="audio/mp3 u ogg o wav"  en source 
+para maximisar la compatibilidad se recomienda colocar las etiquetas source con los formatos distintos 
+
+si el navegador no soporta la etiqueta , se puede colocar un mensaje dentro del codigo y sin etiquetas , para hacer que el audio se 
+reproduzca automaticamente cuando la pagina inicie se usa el atributo <autoplay> dentro de la etiqueta audio
+tambien esta el atributo <loop> que esta dentro de la etiqeta audio , que sirve para que esta entre en bucle 
+teambien esta el atributo <preload> es un atributo de la etiqueta de audio que sirve para indicar si se quiere que la pagina 
+lo carge automaticamente , o no lo descargue . 
+
+<video> la etiqueta video funciona igual que la etiqueta audio con los mismos atributos , se puede ajustar la altura y el ancho, en
+    la etiqueta video tambien podemos indicar en que momento se incia el video y esto se hace en la etiqueta
+    sorurce ejemplo <source src="../archivos varios/caballos_galopando.mp4#t=5"> al final del nombre colocamos t= y el numero del segundo 
+    en el que desemos que inicie y para colocar donde queremos que finalize el video debemos colocar una coma seguido del tiempo en el
+    que queremos que inicie #t=5,7 o #t=0,2 tambien se puede agregar formato de tiempo con los 2 puntos ejemplo 2:30:00 
+<track> esta etiqueta funciona dentro de los videos para , descripciones , meta , y subtitulos dentro del video, esto usa los formatos 
+vtt y ttml . esto se especifica dentro de track con el atributo <kind> , esto va de la mano con el atributo <label> que lo que hace es 
+    espicificar lo que va a aparecer en la barra de configuraciones del video 
+
+    CONTENIDO INCRUSTADO PARTE 3 
+<canvas>con canvas podemos dibujar grraficos por medio de comandos con javascript , se usa mucho con javascript , canvas se lo puede especificar
+    con una altura , heigth width, tambien se lo puede personalizar con la etiqueta style , dentro de canvas se debe poner una etiqueta 
+    <script></script> para poder asi manejar javascript .
+
+<svg> las siglas en igles de svg quieren decir scale vector grafifc , graficos vectoriales escalables , al igual que con canvas en java 
+    se puede hacer graficos pero con el lenguage XML , se le tiene que dar un tablero de dibujo , y esto se hace estableciendo un ancho 
+    y un alto (width, heigth)
+    una vez eestablecido el marco podemos crear formas omo circulos cuadrados etc
+    y esto lo hacemos con los comandos  
+ para un rectangulo se establece       <rect x="100px" y="30px" width="50px" height="50px" fill="transparent" stroke="blue" stroke-width="5"/>
+ para un circulo se establece          <circle cx="50px" cy="50px" r="50" fill="green"/>
+  para una elipse se establece         <ellipse cx="150" cy="150" rx="60" ry="40" fill="transparent" stroke="red" stroke-width="10px"/>
+  fill funciona para darle color al objeto o un estilo , stroke funciona como su borde, y stroke-width funciona como el tamaño del borde
+
+  tambien se usa una etiqueta defs, y dentro de esta otra etiqueta ,lineargradient la etiqueta <lineargradient id""df"> debe tener 
+    obligatoriamente una id ,  dentro de esto se establecen los parametros con la etiqueta stop como se muestra en <source src="/explicaciones html/etiquetas de contenido 2.html">
+    una vez en stop se establecen los parametros de los objetos como opacidad etc 
+
+    NOTA 
+
+        la etiqueta style puede afectar completamente a un objeto solo colocandole la id a un bjeto 
+         <style>
+            elipse{
+                fill: esto establece que relleno va a tener , color ,contorno o transparente , o se puede agregar una url( ) con lineargradient
+                para asi poder tener degradados o mas opciones de colores 
+                
+                stroke este elemento nos permite hacer un contorno o margen , se lo puede personalizar 
+
+                stroke-width este elemento permite definir el tamaño de la margen 
+            }
+        </style>
+----------------------------------------------------------------------------------------------------------------------------------------
+                                            TABLAS 1 
+<table> la etiqueta table, se le indica al navegador que va a empezar a estructurar una tabla , si se le va a agregar un estilo y se quiere
+    que las casillas quedan jundas , el el apartado <style bordercolaps="collapse">
+        - para crear una columna se debe utilizar la etiqueta <tr>
+ dentro de la etiqueta tr se usa la etiqueta td para crear el interior de la tabla haciendo filas 
+        y si las letras quedan muy pegadas al borde 
+        se puede colocar en la etiqueta style un <pading> de x pixeles de alto por x pixeles de largo
+TABLAS PARTE 2 
+se va a tulizar la etiqueta <thead>como descriptiva y en la cabeza para hacer una tabla , tambien un <tbody> como el cuerpo de la tabla
+     y un <tfoot> como el pie de la tabla, la tabla maneja una estructura entera . 
+
+    TABLAS PARTE 3 
+<caption> caption se usa para el titulo  y va antes del thead 
+<colgroup>  sirve para gestiona o seccionar las columnas por colores , y se usa 
+    despues de poner la etiqueta table , pero para agregarle tenemos que ponerle un background color 
+    y para seleccinar mas de una columna se debe colocar <span> todo esto dentro de la etiqueta style 
+        de colgroup
+    en alternativa a la etiqueta span , se puede usar dentro de la etiqueta colgroup , un <col> que lo que hace es que cada col valga como 
+    ima fila individual 
+
+<colspan> para usar colspan se debe usar en una etiqueta de filas th , hd para que esta
+    ocupe el numero de casillas como titulo superior.
+
+<rowspan> este atributo se usa para colocar una casilla como un titulo a la derech , y se debe colocar 
+    el numero de casillas que va a tener este titulo
+
+----------------------------------------------------------------------------------------------------------------------------------------
+                                               FORMULARIOS 1 inputs 
+para empezar a realizar formularios se debe colocar una etiqueta interactiva , para esto usamos <form action=""> 
+el atributo <action> es donde la url va a mandar los datos , estos datos mayormente deben ser mandados a una pagina con un script 
+para que asi se pueda procesar los datos .
+si en action se deja vacio el atributo se enviara al mismo url trabajado
+para poder enviar los datos por la url se necesita otro atributo llamado <method="get"> , cuando este atributo se encuentre en 
+get se enviara el formulario, tambien esta la variante <method="post"> que permite enviar el formulario pero 
+    escondido de la url , esto se usa para inicio de sesiones o registros 
+    
+    dentro de la etiqueta from , se debe colocar un <input> y dentro de esta le ponemos el tipo de manejo , puede ser texto , fecha 
+    cuadro para remarcar , boton para enviar, boton de subir , buscador  la etiqueta quedaria asi <input type="text">. 
+    tambien la etiqueta input tiene otro atributo que es el atributo <name> este atributo nos permite colocar el nombre de 
+    como se va a llenar el formulario , con nombre apellido ciudad etc , para que asi el usario que lo reciba pueda identificar 
+    que es por ejemplo
+    
+    <input type="text" name="nombre"> asi sabemos y la pagina que lo recibe va a entender que lo que esta recibiendo es un 
+    nombre 
+    
+para hacer un boton de enviado , o un boton se puede usar <button type="submit">enviar<button> y asi se agregara un boton de enviado 
+    para el formulario 
+
+
+    FORMULARIOS PARTE 2 ----------------------------------------------------------------------------------------------------------------
+    para esta clase se uso en la etiqueta -->,chekbox.<-- un atributo llamado <value> que nos permite asignarle un valor cuando la casilla este
+        seleccionada  
+
+    dentro d ela etiqueta <input> se recomienda colocar un <label for=""> para poder redirigir la informacion dada a una ruta de preferencia 
+    
+    para que el label funcione correctamente se debe colocar una atributo <id> dentro de el <input> y el nombre que se le coloque al id 
+    tiene que ser el mismo que el que use el <for="id">  
+
+    si lo que se quiere es que todo el texto se pueda seleccionar , se debe colocar la etiqueta input dentro del label 
+    
+    RECUERDA QUE EN ESTE APARTADO 
+    -en el for se coloca la misma id de el input
+    -El name del genero es para colocar una catergoria junta 
+    -El value es como se va a enviar la respuesta al servidor 
+
+<input type="color"> esta etiqueta sirve para mostrar en la pagina una paleta y serie de colores 
+<input type="file"> esta etiqueta sirve para subir un archivo
+
+FORMULARIOS PARTE 3 -----------------------------------------------------------------------------------------------------------------------------
+ 
+<input type="range"> esta etiqueta sirve para crear una barra con in ranfo especifico , se le puede agregar atributos , como el min y el max ,
+en estos el porcentaje que se quiere , tambien se le puede agregar estilos para aumentar su ancho (widt), esta barra siempre va iniciar 
+con un valor en la mitad , esto se lo podemos cambiar con el atributo <value>
+esta etiqueta tambien tiene un atributo que nos permite movernos pero por secciones es decir de 2 en 2 , 3 en 3 etc este atributo 
+es el atributo <step>
+
+Este input tambien se puede agregar a una lista o <datalist> con los valores que hay en esta 
+
+<datalist> esta etiqueta sirve para hacer una lista de unos objetos , pueden ser nnumero , cosas etc
+    dichos objetos se los puede agregar con un input en cualquier instancia , puede
+    ser en rango o en text , dentro de esta etiqueta va otra etiqueta llamada <option>
+    y dentro de la etiqueta optin va los datos de la lista 
+
+    para agregar los valores de una lista se debe colocar el atributo <list> en el input y dentro de este el id de la lista a trabajar 
+estas listas se pueden agregar al texto para que salga una barrita con las respuestas predeterminadas o dadas por 
+el desarrollador
+FORMULARIOS PARTE 4----------------------------------------------------------------------------------------------------------------------------------------------------
+ 
+<select> esta etiqueta sirve para colocar un apartado pequeño con diferentes opciones , y valores a poner dentro de esta etiqueta 
+    colocaremos las etiquetas <option> y dentro de estas vamos a colocar las opciones de cada elemento .
+Antes de colocar esta etiqueta se recomienda colocar una etiqueta <label></label>
+
+<disable > este atributo nos permite desactivar las opciones ya se en select o en option
+
+<optiongroup> esta etiqueta se usa para agrupar las diferentes opciones de lisa (option) y para mostrar el nombre del grupo se le tiene que colocar 
+    un atributo llamado <label>
+
+FORMULARIOS PARTE 5 - 6 - 7 ---------------------------------------------------------------------------------------------------------------------
+<fieldset> con la etiqueta fields set agregamos un recuadro para poder colocar objetos como formularios, listas etc 
+    esta etiqueta va acompañanad con troa etiqueta <legend> y esta etiqueta agrega un subtitulo al cuadto 
+
+<progres> la etiqueta progres añade una barra de progreso (como las barras de cargando) esta etiqueta para que funcione correctamente se 
+    le tiene que agrega un atributo <value> y un atributo <max> con el valor que queremos colocar y el valor maximo . 
+
+<meter> la etiqueta meter agrega una barra de relleno , como si estuvieramos llenando un disco local 
+    , para usar meter tambien se debe utilizar los atributos , <value> <max> , para colocar un valor 
+        y colocar un maximo
+
+<textarea>esta etiqueta agrega un area de texto , esto se hace comunmente para mandar a correos o . , alguna queja critica 
+    se usa en el apartado de contactanos de una pagina . 
+FOMRULARIOS PARTE 8 ------------------------------------------------------------------------------------------------------------------------------------------
+<output> la etiqueta output funciona como un igual a , esta funcion va de la mano mucho con javascript , o para hacer operaciones 
+    rapidas , como sumar , restar , dividir etc , se utilizaria en un form , el atributo on input como se muestra en el ejemplo 
+    de (formulario 7../ explicaciones.html)
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+                                                    LOGIN REGISTER 
+La clase de login register fue una clase practica donde se aplico lo de formularios e inputs , con un poco de codigo css
+
+----------------------------------------------------------------------------------------------------------------------------------------
+                                                    ELEMENTOS INTERACTIVOS DETAILS,SUMMARY y dialog
+<details> es una etiqueta interactiva que sirve para agregar detalles a ciertas etiquetas o textos 
+    y esto va acompañado con una etiqueta  <summary> que va a ser la encargada de colocar el titulo a esta informacion detallada
+
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+NOTAS DE CREACION DE LA PAGINA WEB EN HTML
+
+- para acomodar correctamente un objeto es muy necesaria la etiqueta <div> ya que gracias a esta podemos encerrar un contenido en una 
+    tipo de caja 
+-recuerda que el que el widt y el heigrt sirven para el largo y ancho del objeto , y lo que este adentro del objeto se acomoda con un 
+<padding> es un espaciado que uno crea dentro del objeto[si se colocan 1 digito lo toma por todos lads el valor colocado]
+                                                                        ejemplo   padding=" 4px "
+                                                                        [si se colocan 2 lo toma de la sigiente manera, primer digito 
+                                                                        arriba y abajo y el segundo digito izquierda y derecha ]
+                                                                        ejemplo  padding="4px 4px"
+                                                                        [si se lo toma con 4 digitos el padding crece de la siguiente 
+                                                                        manera - 1er digito arriba
+                                                                                -2do digito  derecha
+                                                                                -3er digito abajo 
+                                                                                4to digito izquierda]
+<margin> es un espaciado que uno crea fuera del objeto , y su funcion es igual que el padding
+-se tiene que tener en cuenta que <margin> es para definir el hitbox de un elemento 
+- para agregar un fondo a un headr o a una otra seccion  se hace con los atributos <header style="background-image : url(ubicacion de la imagen)">
+
+
+CSS
+
+para poder acomodar la pocicion centrada o en algun punto primero se tiene que configurar el lienzo en el que se va a trabajar para
+poder acomodar el lienzo a un lienzo flexible se tiene que colocar <display flex> esto nos garantisa que podemos colocar el objeto 
+en una pocicion.   ( vuelve a la pagina flexible)
+el display flex funciona de varias maneras 
+<flex-wrap> esta etiqueta pone a todos los contenidos en orden , como en casillitas 
+
+
+<justify-content>  esta etiqueta se usa mucho para poder acomodar el objeto horizontalmente 
+
+<aling intems > esta etiqueta tambien se usa para poder acomodar los objetos pero esto se hace verticalmente 
+
+<text aling> esta etiqueta se usa para acomodar el texto , ya se en el centro que empiece a la izquierda o derecha etc
+
+--------------------------------------------
+la etiqueta <id> sirve com identificador , la etiqueta <class> sirve para agregar una clase al codigo y con esto se le puede colocar
+    estilos css , para agregar mas de una clase , solo se separa de un espacio <class="clase1 clase2">
+    
+*para seleccionar en css una clase esto se debe colocar un punto antes de la clase 
++para seleccionar un id en estilos css se debe colocar un # antes de el id
+-------------------------------------------------------------------
+para cambiar el logo se lo debe llamar con un <link rel="icon" href="direcion del icono"> recuerda cambiar el rel a icon y que este este
+en formato ong
