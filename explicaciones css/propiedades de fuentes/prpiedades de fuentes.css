@@ -1,0 +1,22 @@
+.hola{
+    font-family: fantasy;
+    font-style: italic;
+    font-weight: initial;
+    font-size: larger;
+    font-variant: small-caps;
+
+
+
+
+    border: 1px solid black;
+    display: flex;
+    margin: 10px auto;
+    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-left: 20px;
+}
+
+.parrafo2{
+    font: italic bold small-caps 40px helvetica;
+}

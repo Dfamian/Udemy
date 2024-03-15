@@ -184,3 +184,80 @@ compatibles como chrome , fire fox , opera .
         ::-webkit-scrollbar-track{este pseudo codigo se encarga de modificar toda la barra en si del scrillbar}
         ::-webkit-scrillbar-button-horizontal-decrement:{este pseudo codigo agrega un estilo a el boton hotizontal decreciento. se puede agregar tanto 
         horizontalcomo vertical  }
+ _-_-_-_-_-_-_-_-_-_-_-_-_-_--_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_--_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_--_-
+                                   
+                                   PROPIEDADES DE FUENTES 
+font family -- define el tipo de letra y a la familia que este pertenece , escoje una familia y otras familias por si esta no es compatibles con los 
+navegadores (tambien existe una familia generica que se define con)
+                                   * serif
+                                   * sans-serif
+                                   *cursive 
+                                   * fantasy 
+                                   * monospace 
+font-style -- el font style se encarga de colocarle un estilo a el tipo de letra que estamos usando , por ejemplo , la inclina hacia la izquierda 
+le añade diferentes estilos 
+font-weigth -- estabelece como se deben mostrar los caracteres finos o caracteres gruesos 
+                                   *normal 
+                                   *bold 
+                                   *bolder
+                                   *ligther
+                                   *number
+                                   *nitial
+                                   *inherit 
+font-size -- establece el tamaño de el tipo de letra este se puede usar con las medidas o con ciertas indicaciones 
+como larger , small etc 
+font-variant -- camabia la variante de las letras volviendo las letras minusculas en mayusculas pero convirtiendo su
+tamaño , tambien marca las mayusculas en negrita 
+
+font -- con esta etiqueta nos permite colocar todo los estilos de texto en esta , y nos lo permite hacer seguido pero 
+esta etiqueta tiene un orden para colocar los atributos y va asi 
+                                   * font-style 1ro
+                                   * font-weigth 2do 
+                                   * font-variant 3ro 
+                                   * font-size 4to 
+                                   * font-family 5to
+se tiene que colocar todas las etiquetas para que esta etiqueta funcione
+
+_-_-_-_-_-_-_-_-_-_-_-_-_-_--_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_--_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_--_-
+CSS.2
+                                                PROPIEDADES DE TEXTO 
+            las propiedades de texto nos permiten modificar el interlineado la separacion la sangrias , los alineados y mucho mas 
+
+text-indent -- agrega un indentado o un espacio hacia la derecha se usa para facilitar la lectura en los articulos 
+text-tranform -- es para cambiar el texto en minusculas o mayusculas , o tambien para colocar cada letra inicial en
+mayusculas 
+white-space -- este propiedad tiene dos clases una en la que no fecta el texto y otra en la que lo afecta haciendo que los 
+espacios y el modo en el que se escribe en texto afecte 
+                                        *normal
+                                        *pre
+                                        *nowrap - eliminas los espacios en blanco y las lineas 
+                                        *prerap -repeta los espacios y las tabulaciones pero elicmina los espacios en blanco
+                                        *pre-line - elimina los espacios en blanco pero respeta el contenido que hay en calda linea 
+word-spacing -- modifica la medida de el espacio en cada palabra (o el espacio de la barra espaceadora)
+letter-spacing -- modifica el espacio que hay en cada letra 
+text-aling -- es un alieamiento de texto y este puede ser (centro, izquierda ,derecha etc)
+text-decoration -- nos permite decorar el texto ya sea , una linea al piso , linea sobre ella etc 
+CSS.3      ALGUNOS NAVEAGADORES NO SON COMPATIBLES CON CSS.3 AVERIGUA ANTES DE APLICAR 
+text-decoration-style -- esta propiedad nos permite modificar el decorado del texto ya sea con el color o con la linea pundteda etc.
+               -color    y para poder aplicar esta etiqueta tiene que haber un text decoration previo 
+               -dashed
+text-aling-last -- se usa para alinear la ultima fila de latras
+word-wrap -- sirve para que el texto que este dentro de un contenedor no se salga y este contenedor pueda romper las PALABRAS 
+text-overflow -- sirve para ordenar un parrafo cuando se desborda ya sea escondiendolo o , añadiendole un scrollbar
+overflow -- se encarga de encerrar contenido que se salga del contenedor o de los parametros puestos , y esto se lo hace con un scrill
+u otras formas 
+text-shadow -- coloca una sombra a el texto y tiene diferentes parametros 
+                      * x = maneja la sombra a la izquierda o a la derecha
+                      * y = maneja la sombra hacia arriba o hacia abajo 
+                      * blur = desenfoque de la sombra 
+                      * color = el color 
+
+
+
+
+
+
+
+
+
+
