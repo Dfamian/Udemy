@@ -251,7 +251,13 @@ text-shadow -- coloca una sombra a el texto y tiene diferentes parametros
                       * y = maneja la sombra hacia arriba o hacia abajo 
                       * blur = desenfoque de la sombra 
                       * color = el color 
-
+_-_-_-_-_-_-_-_-_-_-_-_-_-_--_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_--_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_--_-
+                                        LIST STYLE TYPE 
+-list-style-type -- Cambia la viñeta de la lista 
+-list-style-position -- determina la pocicion de la viñetas si adentro o afuera de la lista 
+-list-style -- este comando funciona como un shorthand , * colocando de primero el tipo 
+                                                         * colocando de segundo la pocicion 
+                                                         * colocando de tercero la imagen
 
 
 

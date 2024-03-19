@@ -1,0 +1,14 @@
+*{
+    margin: 10px;
+    padding: 0px;
+}
+ol, ul{
+    list-style-type: armenian;
+    list-style-position: inside;
+    list-style-image: url(https://c0.klipartz.com/pngpicture/601/285/gratis-png-cheque-rojo-y-blanco-documentos-de-google-con-vinetas-puntos-de-vinetas-thumbnail.png);
+    
+}
+li{
+    border: 1px solid red;
+    padding: 5px;
+}
